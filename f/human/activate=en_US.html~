@@ -35,9 +35,9 @@
 	  		<div class="content">
     	
     	    	<!-- 中部左侧区域开始 -->
-    	    	<h3 class='f24'> Electric ID Service System for Elves in Rivendell </h3>
+    	    	<h3 class='f24'> Electric ID Service System for dwarves in Rivendell </h3>
     	   		<h4></h4>
-    	    	<p style="margin-top: 25px;" class='f16'> Please identify yourself with your Chosen Name and the verification code. </p>
+    	    	<p style="margin-top: 25px;" class='f16'> Please identify yourself with your Name and the verification code. </p>
 				<p class='f16'> If the verification succeeds, you may set up a password and activate your electric ID account. </p>
 				<p class='f16'> With the activated account, you are able to access alert and service system of Rivendell. </p>
     	   		<form id="myform" action="/do/off/ui/activation/ug/register/check" method="post">
@@ -46,12 +46,12 @@
     	        		<td height="30" colspan="3" style="font-size:14px;"> Please input your Chosen Name and verification code which could be found in the verification code envelope, as is shown below. </td>
     	      		</tr>
     	      		<tr>
-    	        		<td width="40%">Chosen&emsp;&emsp;Name:</td>
+    	        		<td width="40%">Your&emsp;&emsp;Name:</td>
     	        		<td width="249"><input id ="i_xh" class="input" type="text" value="" name="userId"/></td>
     	        		<td width="40%"><span id="msg_xh" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>
-    	        		<td width="40%">Verification&ensp;Code:</td>
+    	        		<td width="40%">Verification Code:</td>
     	        		<td width="249"><input id ="i_jhm" class="input" type="text" value="" name="checksum"/></td>
     	        		<td width="40%"><span id="msg_jhm" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>

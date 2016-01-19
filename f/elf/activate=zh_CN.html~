@@ -17,7 +17,18 @@
 				<span>|</span>
 				<a style="color: black;margin-left: 3px;" href="activate=en_US.html">English</a>
 			</div>
-			<div>
+			<div class="header">
+            	<div class="mainwrap"></div>   
+         		<!-- nav 区域开始 -->          
+            	<div class="nav">
+                	<ul>
+                	    <li class="nav_active">1.输入校验码</li>
+                	    <li>2.身份信息确认</li>
+                	    <li>3.激活成功</li>
+                	</ul>   
+            	</div>  
+         		<!-- nav 区域结束 -->   
+    		</div>
 				<!-- -->
 				<!-- 中部区域开 S-->
 	  		<div class="content">
@@ -45,7 +56,7 @@
     	      		</tr>
     	      		<tr>
     	        		<td></td>
-    	        	<td><a href="b.html"><input type="button" value='确认' ></a></td>
+    	        	<td><a href="activate=en_US.html"><input type="button" value='确认'></a></td>
     	      		</tr>
     	      		<!-- <tr>
     		       	<td colspan="2"><img height="285px" width="480px" src="/ui/activation/images/jym.png" alt="" /> </td>
