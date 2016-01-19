@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 欢迎来到瑞文戴尔 </title>
+    </head>
+	<body>
+		<div>
+			<!-- 标题部分 -->
+			<img src="../ui/403.png" height = '80'>
+		</div>
+		<div>
+			<!-- 中英文切换 -->
+			<div align="right" style="color: black;font-size: 14px;margin-bottom: 5px;">
+				<a style="color: black;margin-right: 12px;" title="=Homepage" href="../index.html">主页</a>
+				<span style="margin-right: 5px;" >|</span>
+				<a style="color: black;margin-right: 3px;" href="residentActivate=zh_CN.html">中文</a>
+				<span>|</span>
+				<a style="color: black;margin-left: 3px;" href="residentActivate=en_US.html">English</a>
+			</div>
+			<div>
+				<!-- -->
+				
+				<div style="float:right;" >
+					<a href="../login=zh_CN.html">已有帐号？登录</a>
+				</div>
+			</div>
+			<div class="footer">
+				<p id="p_footer">
+					发现戒灵袭击，请告知爱隆领主，葛洛芬戴尔大人或者灰袍甘道夫。 
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
