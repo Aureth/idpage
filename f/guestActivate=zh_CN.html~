@@ -19,7 +19,17 @@
 			</div>
 			<div>
 				<!-- -->
-				
+				<div>
+					<table style="align:center;border:0;margin-bottom: 60px;">
+						<tr>
+							<td>
+								<div><a href="elf/activate=zh_CN.html">我是精灵</a></div>
+		        				<div style="margin-right:0;" ><a href="human/activate=zh_CN.html">我是人类</a></div>
+								<div style="margin-right:0;" ><a href="dwarl/activate=zh_CN.html">我是矮人</a></div>
+							</td>
+						</tr>
+					</table>
+				</div>
 				<div style="float:right;" >
 					<a href="../login=zh_CN.html">已有帐号？登录</a>
 				</div>

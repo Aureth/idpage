@@ -2,37 +2,38 @@
 <html>
     <head>
         <title>Welcome to Rivendell</title>
+		<link type="text/css" href="ui/frame.css"	rel="stylesheet" />
+
     </head>
 	<body>
+	<div>
 		<div>
 			<!-- 标题部分 -->
 			<img src="ui/403.png" height = '80'>
 		</div>
 		<div>
 			<!-- 中英文切换 -->
-			<div align="right" style="color: black;font-size: 14px;margin-bottom: 5px;">
-				<a style="color: black;margin-right: 3px;" href="index=zh_CN.html">中文</a>
+			<div align="right" style="color:yellow;font-size: 14px;margin-bottom: 5px;">
+				<a style="color:white;margin-right: 3px;" href="index=zh_CN.html">中文</a>
 				<span>|</span>
-				<a style="color: black;margin-left: 3px;" href="index=en_US.html">English</a>
+				<a style="color:white;margin-left: 3px;" href="index=en_US.html">English</a>
 			</div>
-			<div>
+			<div id="midcontent">
 				<!-- -->
-				<h2> Welcome to Rivendell </h2>
+				<h2> Electric ID Service System of Rivendell </h2>
 				<h1 class="line"> </h1>
 				<h3> For the safety of Rivendell please verify your identity and activate your electric ID </h3>
 				<h3> Please identify yourself </h3>
 				<div>
-					<table style="align:center;border:0;margin-bottom: 60px;">
+					<table style="border:0;margin-top: 30px;margin-bottom: 60px;">
 						<tr>
-							<td>
-								<div><a href="f/residentActivate=en_US.html">Resident.</a></div>
-		        				<div style="margin-right:0;" ><a href="f/guestActivate=en_US.html">Guest.</a></div>
-							</td>
+							<td> <div id="cir1"><a class="cirmiddle" href="f/residentActivate=en_US.html">Resident.</a></div></td>
+							<td> <div id="cir2"><a class="cirmiddle" href="f/guestActivate=en_US.html">Guest.</a></div></td>
 						</tr>
 					</table>
 				</div>
-				<div style="float:right;" >
-					<a href="login=en_US.html">Already activated? Login.</a>
+				<div align="right" >
+					<a style="padding-right: 50px;" href="login=en_US.html">Already activated? Login.</a>
 				</div>
 			</div>
 			<div class="footer">
@@ -41,5 +42,6 @@
 				</p>
 			</div>
 		</div>
+	</div>
 	</body>
 </html>

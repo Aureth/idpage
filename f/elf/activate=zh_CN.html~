@@ -56,7 +56,7 @@
     	      		</tr>
     	      		<tr>
     	        		<td></td>
-    	        	<td><a href="activate=en_US.html"><input type="button" value='确认'></a></td>
+    	        	<td><a href="confirm=zh_CN.html"><input type="button" value='确认'></a></td>
     	      		</tr>
     	      		<!-- <tr>
     		       	<td colspan="2"><img height="285px" width="480px" src="/ui/activation/images/jym.png" alt="" /> </td>
