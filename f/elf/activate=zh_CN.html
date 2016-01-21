@@ -2,6 +2,20 @@
 <html>
     <head>
         <title> 欢迎来到瑞文戴尔 </title>
+		<link type="text/css" href="../../ui/frame.css"	rel="stylesheet" />
+		<script type="text/javascript">
+			conform = function() {
+				if (document.getElementById("i_xh").value == "") {
+					document.getElementById("msg_xh").innerHTML = "输入姓名";
+					return;
+				}
+				if (document.getElementById("i_jhm").value == "") {
+					document.getElementById("msg_jhm").innerHTML = "输入校验码";
+					return;
+				}
+				return location.href='confirm=zh_CN.html';
+			}
+		</script>
     </head>
 	<body>
 		<div>
@@ -10,12 +24,12 @@
 		</div>
 		<div>
 			<!-- 中英文切换 -->
-			<div align="right" style="color: black;font-size: 14px;margin-bottom: 5px;">
-				<a style="color: black;margin-right: 12px;" title="=Homepage" href="../../index=zh_CN.html">主页</a>
+			<div align="right" style="color:#ffcc00;font-size: 14px;margin-bottom: 5px;">
+				<a style="color:#ffcc00;margin-right: 5px;" title="=Homepage" href="../../index=zh_CN.html">homepage</a>
 				<span style="margin-right: 5px;" >|</span>
-				<a style="color: black;margin-right: 3px;" href="activate=zh_CN.html">中文</a>
+				<a style="color:#ffcc00;margin-right: 3px;" href="activate=zh_CN.html">中文</a>
 				<span>|</span>
-				<a style="color: black;margin-left: 3px;" href="activate=en_US.html">English</a>
+				<a style="color:#ffcc00;margin-left: 3px;" href="activate=en_US.html">English</a>
 			</div>
 			<div class="header">
             	<div class="mainwrap"></div>   
@@ -31,7 +45,7 @@
     		</div>
 				<!-- -->
 				<!-- 中部区域开 S-->
-	  		<div class="content">
+	  		<div id="midcontent2">
     	
     	    	<!-- 中部左侧区域开始 -->
     	    	<h3 class='f24'>欢迎使用瑞文戴尔电子身份服务系统</h3>
@@ -40,36 +54,35 @@
 				<p class='f16'>验证通过后会引导你进行账号的密码设置并激活账号。</p>
 				<p class='f16'>账号激活后，你可以开始使用瑞文戴尔警戒和服务系统。</p>
     	   		<form id="myform" action="/do/off/ui/activation/ug/register/check" method="post">
-    	    	<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="tab">
+    	    	<table width="60%" border="0" cellpadding="8px" cellspacing="0" class="tab" style="margin:0 auto">
     	      		<tr>
     	        		<td height="30" colspan="3" style="font-size:14px;">请输入校验码封中的校验码，位置如下图所示。</td>
     	      		</tr>
     	      		<tr>
-    	        		<td width="40%">姓&emsp;&emsp;名：</td>
-    	        		<td width="249"><input id ="i_xh" class="input" type="text" value="" name="userId"/></td>
+    	        		<td width="30%">姓&emsp;&emsp;名：</td>
+    	        		<td><input id ="i_xh" class="input" type="text" value="" name="userId"/></td>
     	        		<td width="40%"><span id="msg_xh" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>
-    	        		<td width="40%">校&ensp;验&ensp;码：</td>
-    	        		<td width="249"><input id ="i_jhm" class="input" type="text" value="" name="checksum"/></td>
+    	        		<td width="30%">校&ensp;验&ensp;码：</td>
+    	        		<td><input id ="i_jhm" class="input" type="text" value="" name="checksum"/></td>
     	        		<td width="40%"><span id="msg_jhm" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>
     	        		<td></td>
-    	        	<td><a href="confirm=zh_CN.html"><input type="button" value='确认'></a></td>
+					<td align="left"><input type="button" class="confirm" value='确认' onclick="conform()"/></td>
     	      		</tr>
     	      		<!-- <tr>
     		       	<td colspan="2"><img height="285px" width="480px" src="/ui/activation/images/jym.png" alt="" /> </td>
     		      	</tr> -->
     		    </table>
 					</form>
-					<p class="f14"><img height="285px" width="480px" src="/ui/activation/images/jym.png" alt="" /></p>
       				<!-- 中部左区区域结束 -->
-    			</div>
-				<div style="float:right;" >
-					<a href="../../login=zh_CN.html">已有帐号？登录</a>
+    			
+				<div align="right" >
+					<a style="padding-right: 50px;" href="../../login=zh_CN.html">已有帐号？登录</a>
 				</div>
-			</div>
+			</div></div>
 			<div class="footer">
 				<p id="p_footer">
 					发现戒灵袭击，请告知爱隆领主，葛洛芬戴尔大人或者灰袍甘道夫。 

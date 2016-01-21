@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Rivendell</title>
+		<link type="text/css" href="../../ui/frame.css"	rel="stylesheet" />
+    </head>
+	<body>
+		<div>
+			<!-- 标题部分 -->
+			<img src="../../ui/403.png" height = '80'>
+		</div>
+		<div>
+			<!-- 中英文切换 -->
+		<div>
+			<div class="header">
+   	        	<div class="mainwrap"></div>   
+         		<!-- nav 区域开始 -->          
+            	<div class="nav" style="margin-top:20px;">
+                	<ul>
+                	    <li>1.Input verification code</li>
+                	    <li>2.Confirm Identification</li>
+                	    <li class="nav_active">3.Activate Successfully</li>
+                	</ul>   
+            	</div>  
+         		<!-- nav 区域结束 -->   
+    		</div>
+			<!-- 中部区域开 S-->
+	  		<div id="midcontent2" >
+    	    	<!-- 中部左侧区域开始 -->
+    	    	<h3 class='f24'> Electric ID Service System for Human in Rivendell </h3>
+    	   		<h4></h4>
+				<div>
+					<img src="../../ui/404.png" height = '100'>
+				</div>
+    	    	<p style="margin-top: 25px;" class='f16'> Congradulation! You have successfully activated.</p>
+			</div>
+			<div class="footer">
+				<p id="p_footer">
+					For Nagzul attack, please alert Lord Elrond, Lord Glofindel or Gandalf the Grey. 
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

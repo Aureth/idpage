@@ -58,18 +58,18 @@
 				<p class='f16'>请设置帐号密码并激活账号。</p>
 				<p class='f16'>账号激活后，你可以开始使用瑞文戴尔警戒和服务系统。</p>
     	   		<form id="myform" action="/do/off/ui/activation/ug/register/check" method="post">
-    	    	<table width="80%" cellpadding="8px" cellspacing="0" class="tab">
+    	    	<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="tab">
     	      		<tr>
     	        		<td height="30" colspan="3" style="font-size:14px;">请输入密码。</td>
     	      		</tr>
     	      		<tr>
     	        		<td width="40%">密&emsp;&emsp;码：</td>
-    	        		<td width="249"><input id ="p1" class="input" type="password" value="" name="userId"/></td>
+    	        		<td width="249"><input id ="p1" class="input" type="text" value="" name="userId"/></td>
     	        		<td width="40%"><span id="m1" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>
     	        		<td width="40%">再次输入：</td>
-    	        		<td width="249"><input id ="p2" class="input" type="password" value="" name="checksum"/></td>
+    	        		<td width="249"><input id ="p2" class="input" type="text" value="" name="checksum"/></td>
     	        		<td width="40%"><span id="m2" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>

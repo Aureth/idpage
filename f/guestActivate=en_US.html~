@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Welcome to Rivendell</title>
-		<link type="text/css" href="../ui/frame.css"	rel="stylesheet" />
+		<link type="text/css" href="../ui/frame.css" rel="stylesheet" />
     </head>
 	<body>
 		<div>
@@ -20,8 +20,11 @@
 			</div>
 			<div id="midcontent">
 				<!-- -->
+				<h2>Electric ID Service System for guests of Rivendell</h2>
+				<h1></h1>
+				<h3>Please select your species</h3>
 				<div>
-					<table style="border:0;margin-top: 30px;margin-bottom: 60px;">
+					<table style="align:center;border:0;margin-top: 30px;margin-bottom: 60px;">
 						<tr>
 							<td><div id="cir1"><a class="cirmiddle" href="elf/activate=en_US.html">Elf.</a></div></td>
 		        			<td><div id="cir2"><a class="cirmiddle" href="human/activate=en_US.html">Human.</a></div></td>

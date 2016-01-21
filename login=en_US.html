@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Rivendell</title>
+		<link type="text/css" href="ui/frame.css"	rel="stylesheet" />
+		<script type="text/javascript">
+			conform = function() {
+				if (document.getElementById("i_xh").value == "") {
+					document.getElementById("msg_xh").innerHTML = "Input name";
+					return;
+				}
+				if (document.getElementById("i_jhm").value == "") {
+					document.getElementById("msg_jhm").innerHTML = "Input password";
+					return;
+				}
+				return location.href='http://www.lotr.cn/';
+			}
+		</script>
+    </head>
+	<body>
+		<div>
+			<!-- 标题部分 -->
+			<img src="ui/403.png" height = '80'>
+		</div>
+		<div>
+			<!-- 中英文切换 -->
+			<div align="right" style="color:yellow;font-size: 14px;margin-bottom: 5px;">
+				<a style="color: white;margin-right: 5px;" title="=Homepage" href="index.html">homepage</a>
+				<span style="margin-right: 5px;" >|</span>
+				<a style="color: white;margin-right: 3px;" href="login=zh_CN.html">中文</a>
+				<span>|</span>
+				<a style="color: white;margin-left: 3px;" href="login=en_US.html">English</a>
+			</div>
+		<div>
+	  		<div id="midcontent">
+    	        <h2> Please input your Name and password</h2>
+    	    	<table width="60%"; align="center" cellpadding="3px" cellspacing="0" style="margin-top:50px;">
+    	      		<tr>
+    	        		<td><input id ="i_xh" class="log" type="text" value="" name="userId" placeholder="Name" style="font-size:18px;"/></td>
+					</tr>
+					<tr style="height:10px">
+    	        		<td><span id="msg_xh" style="color:#e5020d; font-size:14px;"> </span></td>
+    	      		</tr>
+    	      		<tr>
+    	        		<td><input id ="i_jhm" class="log" type="password" value="" name="checksum" placeholder="Password" style="font-size:18px;"/></td>
+					</tr>
+					<tr style="height:10px">
+    	        		<td><span id="msg_jhm" style="color:#e5020d; font-size:14px;"> </span></td>
+    	      		</tr>
+    	      		<tr>
+    	        	<td><input type="button" class="logconfirm" value='CONFIRM' onclick="conform()"/></td>
+    	      		</tr>
+    		    </table>
+    			</div>
+			</div>
+			<div class="footer">
+				<p id="p_footer">
+					For Nagzul attack, please alert Lord Elrond, Lord Glofindel or Gandalf the Grey. 
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

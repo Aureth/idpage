@@ -2,6 +2,24 @@
 <html>
     <head>
         <title> 欢迎来到瑞文戴尔 </title>
+		<link type="text/css" href="../../ui/frame.css"	rel="stylesheet" />
+		<script type="text/javascript">
+			conform = function() {
+				if (document.getElementById("p1").value == "") {
+					document.getElementById("m1").innerHTML = "输入密码";
+					return;
+				}
+				if (document.getElementById("p2").value == "") {
+					document.getElementById("m2").innerHTML = "再次输入密码";
+					return;
+				}
+				if (document.getElementById("p1").value != document.getElementById("p2").value){
+					document.getElementById("m1").innerHTML = "密码不一致";
+					return;
+				}
+				return location.href='success=zh_CN.html';
+			}
+		</script>
     </head>
 	<body>
 		<div>
@@ -31,7 +49,7 @@
     		</div>
 				<!-- -->
 				<!-- 中部区域开 S-->
-	  		<div class="content">
+	  		<div id="midcontent2">
     	
     	    	<!-- 中部左侧区域开始 -->
     	    	<h3 class='f24'>欢迎使用瑞文戴尔电子身份服务系统</h3>
@@ -40,30 +58,30 @@
 				<p class='f16'>请设置帐号密码并激活账号。</p>
 				<p class='f16'>账号激活后，你可以开始使用瑞文戴尔警戒和服务系统。</p>
     	   		<form id="myform" action="/do/off/ui/activation/ug/register/check" method="post">
-    	    	<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="tab">
+    	    	<table width="80%" cellpadding="8px" cellspacing="0" class="tab">
     	      		<tr>
     	        		<td height="30" colspan="3" style="font-size:14px;">请输入密码。</td>
     	      		</tr>
     	      		<tr>
     	        		<td width="40%">密&emsp;&emsp;码：</td>
-    	        		<td width="249"><input id ="i_xh" class="input" type="text" value="" name="userId"/></td>
-    	        		<td width="40%"><span id="msg_xh" style="color:#e5020d; font-size:14px;"></span></td>
+    	        		<td width="249"><input id ="p1" class="input" type="password" value="" name="userId"/></td>
+    	        		<td width="40%"><span id="m1" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>
     	        		<td width="40%">再次输入：</td>
-    	        		<td width="249"><input id ="i_jhm" class="input" type="text" value="" name="checksum"/></td>
-    	        		<td width="40%"><span id="msg_jhm" style="color:#e5020d; font-size:14px;"></span></td>
+    	        		<td width="249"><input id ="p2" class="input" type="password" value="" name="checksum"/></td>
+    	        		<td width="40%"><span id="m2" style="color:#e5020d; font-size:14px;"></span></td>
     	      		</tr>
     	      		<tr>
     	        		<td></td>
-    	        	<td><a href="success=zh_CN.html"><input type="button" value='确认'></a></td>
+    	        	<td align="left"><input type="button" class="confirm" value='确认' onclick="conform()"/></td>
     	      		</tr>
     		    </table>
 				</form>
-    			</div>
-				<div style="float:right;" >
-					<a href="../login=zh_CN.html">已有帐号？登录</a>
+				<div align="right" >
+					<a style="padding-right: 50px;" href="../../login=zh_CN.html">已有帐号？登录</a>
 				</div>
+			</div>
 			</div>
 			<div class="footer">
 				<p id="p_footer">

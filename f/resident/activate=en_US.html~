@@ -46,7 +46,7 @@
 	  		<div id="midcontent2">
     	
     	    	<!-- 中部左侧区域开始 -->
-    	    	<h3> Electric ID Service System for Elves in Rivendell </h3>
+    	    	<h3> Electric ID Service System for Guest in Rivendell </h3>
     	   		<h4></h4>
     	    	<p style="margin-top: 25px;"> Please identify yourself with your Name and the verification code. </p>
 				<p class='f16'> If the verification succeeds, you may set up a password and activate your electric ID account. </p>
@@ -70,7 +70,7 @@
     	        		<td align="left"><input type="button" class="confirm" value='CONFIRM' onclick="conform()"/></td>
     	      		</tr>
     		    </table>
-      			<!-- 中部左区区域结束 -->
+      				<!-- 中部左区区域结束 -->
 				<div align="right">
 					<a style="padding-right: 50px;" href="../../login=en_US.html">Already activated? Login.</a>
 				</div>
